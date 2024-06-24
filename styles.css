@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cup {
+    width: 100px;
+    height: 150px;
+    background-color: #333;
+    margin: 0 10px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: 2px solid transparent;
+}
+
+
+.cup.selected{
+    border-color: blue;
+    border-width: thick;
+}
+
+.cup:hover {
+    transform: scale(1.1);
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -25px;
+    left: 25px;
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
